@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
-public class Madlib
-   public static void main(String args[]);
+public class Madlib{
+   public static void main(String args[]){
+   
    Scanner liz = new Scanner(System.in);
   
    String wordRelative = "";
