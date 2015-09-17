@@ -1,4 +1,4 @@
-import java.util.scanner
+import java.util.Scanner;
 
    public class ageIntoMinAndSec{
    
@@ -22,6 +22,9 @@ import java.util.scanner
    seconds = seconds % 60;
    
    System.out.println("You have been alive for: " + minutes +" minutes and " + seconds + "seconds");
+   
+   }
+  }
    
    
    
