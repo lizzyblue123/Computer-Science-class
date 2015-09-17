@@ -15,7 +15,7 @@ System.out.println("Enter an amount of seconds: ");
 secondsBeforeConversion = scnr.nextInt();
 
 min = secondsBeforeConversion / 60;
-sec = sec % 60;
+sec = secondsBeforeConversion % 60;
 hour = min / 60;
 min = min % 60;
 
