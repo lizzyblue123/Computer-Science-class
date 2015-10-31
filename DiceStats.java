@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class DiceStats {
-   public static void main(String args []) {
+   public static void main(String args[]) {
      
       Scanner scnr = new Scanner(System.in);
       Random randGen = new Random();
@@ -33,38 +33,10 @@ public class DiceStats {
             die2 = randGen.nextInt(6) + 1;
             rollTotal = die1 + die2;
             
-            if (rollTotal == 2) {
-               numAdded[2] = numAdded[2] + 1;
-            }
-            else if (rollTotal == 3) {
-               numAdded[3] = numAdded[3] + 1;
-            }
-            else if (rollTotal == 4) {
-               numAdded[4] = numAdded[4] + 1;
-            }
-            else if (rollTotal == 5) {
-               numAdded[5] = numAdded[5] + 1;
-            } 
-            else if(rollTotal == 6) {
-               numAdded[6] = numAdded[6] + 1;
-            }
-            else if (rollTotal == 7) {
-               numAdded[7] = numAdded[7] + 1;
-            }
-            else if (rollTotal == 8) {
-               numAdded[8] = numAdded[8] + 1;
-            }
-            else if (rollTotal == 9) {
-               numAdded[9] = numAdded[9] + 1;
-            }
-            else if (rollTotal == 10) {
-               numAdded[10] = numAdded[11] + 1;
-            }
-            else if (rollTotal == 11) {
-               numAdded[11] = numAdded[11] + 1;
-            }
-            else if (rollTotal == 12) {
-               numAdded[12] = numAdded[12] + 1;
+            for (i = 2; i < NUM_ELEMENTS; i++) {
+            	if (rollTotal == i) {
+            		numAdded[i] = numAdded[i] + 1;
+            	}
             }
        }
        
