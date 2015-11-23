@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Random;
 
-public class DiceStats {
+public class diceStats1 {
    public static void main(String args[]) {
      
       Scanner scnr = new Scanner(System.in);
@@ -15,6 +15,7 @@ public class DiceStats {
       int die2 = 0;
       int rollTotal = 0;
       boolean lessThanOne = false;
+      int j = 0;
       
      
          System.out.println("Enter number of rolls: ");
@@ -32,13 +33,12 @@ public class DiceStats {
             die1 = randGen.nextInt(6) + 1;
             die2 = randGen.nextInt(6) + 1;
             rollTotal = die1 + die2;
-            
-            for (i = 2; i < NUM_ELEMENTS; i++) {
-            	if (rollTotal == i) {
-            		numAdded[i] = numAdded[i] + 1;
+            for (j = 2; j < NUM_ELEMENTS; j++) {
+            	if (rollTotal == j) {
+            		numAdded[j] = numAdded[j] + 1;
             	}
             }
-       }
+       }	
        
        System.out.println("\nDice roll statistics:");
        for (i = 2; i < 13; i++) {
@@ -54,83 +54,15 @@ public class DiceStats {
        numRolls = scnr.nextInt();
       }
      }
-      System.out.print("2:  ");
       
-      for (i = 0; i < numAdded[2]; i++){
-         System.out.print("*");
+      for (i = 2; i < NUM_ELEMENTS; i++ ) {
+    	  System.out.print(i + ":  ");
+    	  for (j = 0; j < numAdded[i]; j++){
+    		  	System.out.print("*");
+    	  }
+    	  System.out.println();
       }
-      System.out.println();
       
-      System.out.print("3:  ");
-      
-      for (i = 0; i < numAdded[3]; i++){
-         System.out.print("*");
-      }
-      System.out.println();
-      
-      System.out.print("4:  ");
-      
-      for (i = 0; i < numAdded[4]; i++){
-         System.out.print("*");
-      }
-      System.out.println();
-      
-       System.out.print("5:  ");
-      
-      for (i = 0; i < numAdded[5]; i++){
-         System.out.print("*");
-      }
-      System.out.println();
-      
-       System.out.print("6:  ");
-      
-      for (i = 0; i < numAdded[6]; i++){
-         System.out.print("*");
-      }
-      System.out.println();
-
-       System.out.print("7:  ");
-      
-      for (i = 0; i < numAdded[7]; i++){
-         System.out.print("*");
-      }
-      System.out.println();
-
-       System.out.print("8:  ");
-      
-      for (i = 0; i < numAdded[8]; i++){
-         System.out.print("*");
-      }
-      System.out.println();
-      
-       System.out.print("9:  ");
-      
-      for (i = 0; i < numAdded[9]; i++){
-         System.out.print("*");
-      }
-      System.out.println();
-      
-       System.out.print("10: ");
-      
-      for (i = 0; i < numAdded[10]; i++){
-         System.out.print("*");
-      }
-      System.out.println();
-      
-       System.out.print("11: ");
-      
-      for (i = 0; i < numAdded[11]; i++){
-         System.out.print("*");
-      }
-      System.out.println();
-
-       System.out.print("12: ");
-      
-      for (i = 0; i < numAdded[12]; i++){
-         System.out.print("*");
-      }
-      System.out.println();
-
 
 
    }
