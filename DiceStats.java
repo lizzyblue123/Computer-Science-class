@@ -54,6 +54,7 @@ public class diceStats1 {
        numRolls = scnr.nextInt();
       }
      }
+<<<<<<< HEAD
       
       for (i = 2; i < NUM_ELEMENTS; i++ ) {
     	  System.out.print(i + ":  ");
@@ -61,6 +62,15 @@ public class diceStats1 {
     		  	System.out.print("*");
     	  }
     	  System.out.println();
+=======
+      System.out.print("2:  ");
+      
+      for (i = 2; i < NUM_ELEMENTS; i++){
+         for (i = 0; i < numAdded[i]; i++){
+         System.out.print("*");
+         }
+       System.out.println();
+>>>>>>> origin/master
       }
       
 
